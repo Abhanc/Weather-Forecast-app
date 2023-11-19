@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 import CurrentLocation from "./currentLocation";
 import "./App.css";
+import Particalbackground from "./Camponents/Particalbackground";
+// import { particlesJS } from 'particles.js';
+
+
 
 function App() {
+
+
   return (
     <React.Fragment>
-      <div className="container">
-        <CurrentLocation />
-      </div>
-
+      <>
+        <Particalbackground />
+        <div className="container">
+          <CurrentLocation />
+        </div>
+      </>
     </React.Fragment>
   );
 }

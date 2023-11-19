@@ -4,6 +4,7 @@ import Clock from "react-live-clock";
 import Forcast from "./forcast";
 import loader from "./images/WeatherIcons.gif";
 import ReactAnimatedWeather from "react-animated-weather";
+// import Particalbackground from "./Camponents/Particalbackground";
 const dateBuilder = (d) => {
   let months = [
     "January",
@@ -156,20 +157,20 @@ class Weather extends React.Component {
     if (this.state.temperatureC) {
       return (
         <React.Fragment>
-          <Forcast icon={this.state.icon} weather={this.state.main} />
-          <div className="city">
+
+          <div className="city" style={{}}>
             <div className="title">
               <h2>{this.state.city}</h2>
               <h3>{this.state.country}</h3>
             </div>
             <div className="mb-icon">
               {" "}
-              {/* <ReactAnimatedWeather
+              <ReactAnimatedWeather
                 icon={this.state.icon}
                 color={defaults.color}
                 size={defaults.size}
                 animate={defaults.animate}
-              /> */}
+              />
               <p>{this.state.main}</p>
             </div>
             <div className="date-time">
@@ -189,6 +190,9 @@ class Weather extends React.Component {
               </div>
             </div>
           </div>
+          <Forcast icon={this.state.icon} weather={this.state.main}
+          />
+          {/* <Particalbackground image={this.state.icon} /> */}
 
         </React.Fragment>
       );
