@@ -1,5 +1,5 @@
 <p align="center">
-I am currentaly working on it 
+ <img src="Src/images/HomePage.png" alt="Home Page ScreenShot">
 </p>
 
 ## Setup
